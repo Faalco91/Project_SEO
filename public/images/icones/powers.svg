@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bouclier -->
+  <path d="M32 4L8 14V30C8 45.2 18.4 59.4 32 62C45.6 59.4 56 45.2 56 30V14L32 4Z" 
+    stroke="#E5383B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Étoile -->
+  <path d="M32 20L35.09 26.26L42 27.27L37 32.14L38.18 39.02L32 35.77L25.82 39.02L27 32.14L22 27.27L28.91 26.26L32 20Z" 
+    fill="#E5383B" stroke="#E5383B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+  </path>
+</svg> 

@@ -1,6 +1,26 @@
 :root {
+  /* Couleurs */
   --background: #ffffff;
   --foreground: #171717;
+  --primary-dark: #1a1a1a;
+  --primary-red: #e62429;
+  --white: #ffffff;
+  
+  /* Transitions */
+  --transition-base: 0.3s ease;
+  
+  /* Dégradés */
+  --gradient-hero: linear-gradient(135deg, var(--primary-dark) 0%, #2a2a2a 100%);
+  
+  /* Rayons de bordure */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  
+  /* Ombres */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
