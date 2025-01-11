@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from './pouvoirs.module.css'
-
+import styles from './programmes.module.css'
 const testimonials = [
   {
     author: 'Thomas D.',
@@ -15,7 +14,7 @@ const testimonials = [
   },
 ]
 
-export default function Pouvoirs() {
+export default function Programmes() {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
@@ -24,7 +23,7 @@ export default function Pouvoirs() {
             CSSéducteur
           </Link>
           <div className={styles.navLinks}>
-            <Link href="/pouvoirs" aria-label="Les pouvoirs de CSSéducteur">Pouvoirs</Link>
+            <Link href="/programmes" aria-label="Nos programmes Séduction">Programmes</Link>
             <Link href="/conseils" aria-label="Conseils de séduction par CSSéducteur">Conseils</Link>
             <Link href="/missions" aria-label="Missions de CSSéducteur">Missions</Link>
             <Link href="/histoire" aria-label="Histoire de CSSéducteur">Histoire</Link>
@@ -89,7 +88,7 @@ export default function Pouvoirs() {
           <article className={styles.powerCard}>
             <div className={styles.powerIcon}>
               <Image
-                src="/images/pouvoirs/seduction.svg"
+                src="/images/programmes/seduction.svg"
                 alt="Icône du pouvoir de séduction magnétique"
                 width={64}
                 height={64}
@@ -115,7 +114,7 @@ export default function Pouvoirs() {
                 <span className={styles.label}>vies transformées</span>
               </div>
             </div>
-            <Link href="/pouvoirs/seduction" className={styles.powerLink}>
+            <Link href="/programmes/seduction" className={styles.powerLink}>
               En savoir plus
             </Link>
           </article>
@@ -123,7 +122,7 @@ export default function Pouvoirs() {
           <article className={styles.powerCard}>
             <div className={styles.powerIcon}>
               <Image
-                src="/images/pouvoirs/empathie.svg"
+                src="/images/programmes/empathie.svg"
                 alt="Icône du pouvoir d'empathie émotionnelle"
                 width={64}
                 height={64}
@@ -149,7 +148,7 @@ export default function Pouvoirs() {
                 <span className={styles.label}>relations améliorées</span>
               </div>
             </div>
-            <Link href="/pouvoirs/empathie" className={styles.powerLink}>
+            <Link href="/programmes/empathie" className={styles.powerLink}>
               En savoir plus
             </Link>
           </article>
@@ -157,7 +156,7 @@ export default function Pouvoirs() {
           <article className={styles.powerCard}>
             <div className={styles.powerIcon}>
               <Image
-                src="/images/pouvoirs/presence.svg"
+                src="/images/programmes/presence.svg"
                 alt="Icône du pouvoir de présence magnétique"
                 width={64}
                 height={64}
@@ -183,7 +182,7 @@ export default function Pouvoirs() {
                 <span className={styles.label}>transformations</span>
               </div>
             </div>
-            <Link href="/pouvoirs/presence" className={styles.powerLink}>
+            <Link href="/programmes/presence" className={styles.powerLink}>
               En savoir plus
             </Link>
           </article>

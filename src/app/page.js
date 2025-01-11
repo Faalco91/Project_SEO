@@ -8,47 +8,55 @@ const stats = [
   { number: '10+', label: 'Années d\'Expérience' }
 ]
 
-const services = [
+const raisons = [
   {
-    title: 'Pouvoirs Légendaires',
-    description: 'Découvrez mes super-pouvoirs de séduction et apprenez à les maîtriser',
-    icon: '/images/icones/powers.svg',
-    link: '/pouvoirs'
+    title: 'Des Coachs Experte en Séduction',
+    description: 'Nos coachs sont des professionnels reconnus dans le domaine de la séduction, offrant un accompagnement personnalisé et adapté à chaque client.',
+    icon: '/images/icones/coachs.svg',
+    link: '/coachs' // Lien vers la page des coachs pour en savoir plus
   },
   {
-    title: 'Conseils Stratégiques',
-    description: 'Des techniques éprouvées pour développer votre charisme naturel',
-    icon: '/images/icones/conseils.svg',
-    link: '/conseils'
+    title: 'Approche Personnalisée',
+    description: 'Chaque client bénéficie d’un suivi sur mesure, que ce soit pour des coaching privés, en groupe, ou à travers nos programmes en ligne.',
+    icon: '/images/icones/approche.svg',
+    link: '/services' // Lien vers la page des services détaillés
   },
   {
-    title: 'Missions Spéciales',
-    description: 'Des défis personnalisés pour tester et améliorer vos capacités',
-    icon: '/images/icones/missions.svg',
-    link: '/missions'
+    title: 'Résultats Concrets',
+    description: 'Avec CSSéducteur, vous obtenez des résultats tangibles, que ce soit en termes de confiance en soi, de maîtrise des techniques de séduction, ou dans vos relations.',
+    icon: '/images/icones/resultats.svg',
+    link: '/temoignages' // Lien vers la page des témoignages pour montrer les résultats
+  },
+  {
+    title: 'Suivi Continu',
+    description: 'Nos coachs assurent un suivi régulier pour garantir que vous progressez constamment et que vous atteignez vos objectifs en séduction.',
+    icon: '/images/icones/suivi.svg',
+    link: '/services' // Lien vers la page de services avec suivi personnalisé
   }
-]
+];
 
 const testimonials = [
   {
-    quote: "Grâce à CSSéducteur, j'ai découvert un charisme naturel que je ne soupçonnais pas avoir. Sa méthode unique mêlant super-pouvoirs et coaching est vraiment efficace !",
+    quote: "Grâce à CSSéducteur, j'ai découvert un charisme naturel que je ne soupçonnais pas avoir. Sa méthode unique mêlant super-pouvoirs de séduction et coaching personnalisé m'a permis de transformer ma vie amoureuse. Le coaching en séduction proposé par CSSéducteur est véritablement révolutionnaire !",
     author: "Thomas D.",
     avatar: "/images/avatars/thomas.jpg",
     rating: 5
   },
   {
-    quote: "Quand on m'a parlé de CSSéducteur, j'étais sceptique. Mais sa double expertise de super-héros et coach a complètement transformé ma vie en quelques semaines !",
+    quote: "Avant de découvrir CSSéducteur, je ne croyais pas qu'un coaching en séduction pouvait changer ma vie. Mais grâce à l'approche unique de CSSéducteur, alliant charisme et super-pouvoirs, j'ai vu une transformation complète dans mes interactions sociales. C'est vraiment le meilleur choix pour un coaching en séduction efficace !",
     author: "Sophie M.",
     avatar: "/images/avatars/sophie.jpg",
     rating: 5
   },
   {
-    quote: "L'approche de CSSéducteur est unique - il utilise vraiment ses super-pouvoirs pour nous aider à développer notre confiance. Les résultats sont impressionnants !",
+    quote: "CSSéducteur m'a permis de découvrir un tout nouveau niveau de confiance en moi. Son coaching en séduction, couplé à des super-pouvoirs d'attraction, m'a offert des résultats exceptionnels. Si vous cherchez à booster vos compétences en séduction, CSSéducteur est le coach qu'il vous faut !",
     author: "Marc L.",
     avatar: "/images/avatars/marc.jpg",
     rating: 5
   }
 ]
+
+
 
 export default function Home() {
   return (
@@ -59,10 +67,11 @@ export default function Home() {
             CSSéducteur
           </Link>
           <div className={styles.navLinks}>
-            <Link href="/pouvoirs">Pouvoirs</Link>
-            <Link href="/conseils">Conseils</Link>
-            <Link href="/missions">Missions</Link>
-            <Link href="/histoire">Histoire</Link>
+            <Link href="/">Accueil</Link>
+            <Link href="/conseils">Services</Link>
+            <Link href="/programmes">Programmes</Link>
+            <Link href="/histoire">Coachs</Link>
+            <Link href="/histoire">Blog</Link>
           </div>
         </nav>
       </header>
@@ -76,14 +85,13 @@ export default function Home() {
           </div>
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>
-              <span className={styles.titleLine}>De Super-Héros</span>
-              <span className={styles.titleLine}>à <span className={styles.accent}>CSSéducteur</span></span>
+              CSSéducteur : Maîtrisez l'Art de la Séduction avec Style
             </h1>
             <p className={styles.heroTagline}>
-              Ancien super-héros Marvel, j'utilise mes pouvoirs extraordinaires pour révéler votre potentiel de séduction
+              Programmes de Coaching en Séduction, Mentors Dévoués et Blog Inspirant pour Révéler le Séducteur en Vous
             </p>
-            <Link href="/pouvoirs" className={styles.ctaButton}>
-              Découvrir Mes Pouvoirs
+            <Link href="/programmes" className={styles.ctaButton}>
+              Commencez Votre Transformation
             </Link>
           </div>
         </section>
@@ -92,39 +100,29 @@ export default function Home() {
         <section className={styles.about}>
           <div className={styles.aboutContent}>
             <div className={styles.aboutText}>
-              <h2>Qui suis-je ?</h2>
-              <p>
-                Après des années à sauver le monde en tant que super-héros Marvel,
-                j'ai décidé de mettre mes pouvoirs au service d'une nouvelle mission :
-                vous aider à devenir la meilleure version de vous-même.
-              </p>
-              <div className={styles.statsGrid}>
+            <header>
+                <h2>À propos de nous</h2>
+              </header>
+              <p>Chez <strong>CSSéducteur</strong>, nous sommes une agence de <em>coaching en séduction</em> spécialisée, dédiée à transformer votre vie amoureuse et sociale. Notre équipe de <strong>coach en séduction</strong> expérimentés et reconnus vous propose un accompagnement personnalisé pour atteindre vos objectifs.</p>
+              <p>Nous offrons des <strong>cours en groupe</strong>, des <strong>coachings privés</strong> sur mesure, ainsi que des <strong>programmes prêts à l'emploi</strong>, adaptés à tous les niveaux. Que vous souhaitiez <em>améliorer votre confiance en vous</em>, perfectionner vos techniques de séduction ou apprendre à maîtriser l'art de la communication, CSSéducteur est votre partenaire idéal pour réussir.</p>
+              <p>Avec CSSéducteur, bénéficiez de conseils pratiques et d'un suivi professionnel grâce à nos <strong>mentors en séduction</strong>. Découvrez des méthodes éprouvées et un soutien constant pour révéler le séducteur qui sommeille en vous. Rejoignez-nous et transformez votre vie amoureuse avec les meilleurs experts du domaine.</p>
+            </div>
+            <div className={styles.statsGrid}>
                 {stats.map((stat, index) => (
                   <div key={index} className={styles.statCard}>
                     <span className={styles.statNumber}>{stat.number}</span>
                     <span className={styles.statLabel}>{stat.label}</span>
                   </div>
                 ))}
-              </div>
-            </div>
-            <div className={styles.aboutImage}>
-              <Image
-                src="/images/hero-coach/hero-coach.jpg"
-                alt="CSSéducteur - De super-héros à coach en séduction"
-                width={400}
-                height={400}
-                className={styles.heroCoachImage}
-                priority
-              />
             </div>
           </div>
         </section>
 
         {/* Services Section */}
         <section className={styles.services}>
-          <h2>Comment je peux vous aider</h2>
+          <h2>Pourquoi choisir CSSéducteur ?</h2>
           <div className={styles.servicesGrid}>
-            {services.map((service, index) => (
+            {raisons.map((service, index) => (
               <Link href={service.link} key={index} className={styles.serviceCard}>
                 <div className={styles.serviceIcon}>
                   <Image
@@ -132,6 +130,7 @@ export default function Home() {
                     alt={service.title}
                     width={64}
                     height={64}
+                    loading='lazy'
                   />
                 </div>
                 <h3>{service.title}</h3>
@@ -143,22 +142,23 @@ export default function Home() {
 
         {/* Testimonials Section */}
         <section className={styles.testimonials}>
-          <h2>Ils ont été transformés</h2>
+          <h2>Ils ont été transformés grâce à CSSéducteur !</h2>
           <div className={styles.testimonialGrid}>
             {testimonials.map((testimonial, index) => (
               <div key={index} className={styles.testimonialCard}>
                 <div className={styles.testimonialAvatar}>
                   <Image
                     src={testimonial.avatar}
-                    alt={testimonial.author}
+                    alt={`${testimonial.author} témoignage CSSéducteur`}
                     width={60}
                     height={60}
+                    loading='lazy'
                   />
                 </div>
-                <div className={styles.rating}>
+                <div className={styles.rating} aria-label={`Note de ${testimonial.author} : ${testimonial.rating} étoiles`}>
                   {'★'.repeat(testimonial.rating)}
                 </div>
-                <blockquote>{testimonial.quote}</blockquote>
+                <blockquote aria-describedby="testimonial-quote-description">{testimonial.quote}</blockquote>
                 <cite>{testimonial.author}</cite>
               </div>
             ))}
@@ -167,15 +167,15 @@ export default function Home() {
 
         {/* Final CTA Section */}
         <section className={styles.finalCta}>
-          <h2>Prêt à Révéler Votre Potentiel ?</h2>
+          <h2>Prêt à Révéler Votre Potentiel avec CSSéducteur ?</h2>
           <p>
-            Rejoignez les centaines de personnes qui ont déjà transformé leur vie
-            grâce aux pouvoirs de CSSéducteur
+            Rejoignez les centaines de personnes qui ont transformé leur vie grâce aux techniques uniques de séduction de CSSéducteur. Découvrez comment notre méthode peut vous aider à développer votre charisme et à révéler le séducteur qui sommeille en vous !
           </p>
           <Link href="/pouvoirs" className={styles.ctaButton}>
-            Commencer Ma Transformation
+            Commencer Ma Transformation avec CSSéducteur
           </Link>
         </section>
+
       </main>
 
       <footer className={styles.footer}>
