@@ -171,7 +171,7 @@ export default function Home() {
           <p>
             Rejoignez les centaines de personnes qui ont transformé leur vie grâce aux techniques uniques de séduction de CSSéducteur. Découvrez comment notre méthode peut vous aider à développer votre charisme et à révéler le séducteur qui sommeille en vous !
           </p>
-          <Link href="/pouvoirs" className={styles.ctaButton}>
+          <Link href="/programmes" className={styles.ctaButton}>
             Commencer Ma Transformation avec CSSéducteur
           </Link>
         </section>
