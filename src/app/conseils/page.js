@@ -17,10 +17,11 @@ export default function Services() {
             CSSéducteur
           </Link>
           <div className={styles.navLinks}>
-            <Link href="/pouvoirs">Pouvoirs</Link>
-            <Link href="/conseils">Conseils</Link>
-            <Link href="/missions">Missions</Link>
-            <Link href="/histoire">Histoire</Link>
+            <Link href="/">Accueil</Link>
+            <Link href="/conseils">Services</Link>
+            <Link href="/programmes">Programmes</Link>
+            <Link href="/histoire">Coachs</Link>
+            <Link href="/histoire">Blog</Link>
           </div>
         </nav>
 
