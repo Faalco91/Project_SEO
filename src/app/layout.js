@@ -4,14 +4,43 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'CSSéducteur | Coach en Séduction & Ancien Super-Héros Marvel',
-  description: 'Découvrez les conseils de séduction de CSSéducteur, ancien super-héros Marvel devenu coach en séduction. Apprenez les secrets des pouvoirs de séduction et de la confiance en soi.',
-  keywords: 'CSSéducteur, Coach Sauveur Séducteur, séduction, super-héros, Marvel, coach en séduction, pouvoirs de séduction, conseils amoureux',
+  title: 'CSSéducteur | Expert en Confiance et Style pour la Séduction',
+  description: 'CSSéducteur, l’agence de coaching en séduction reconnue pour ses formations individuelles, en groupe, et ses conférences inspirantes. Apprenez à maîtriser la confiance et le style avec nos coachs renommés.',
+  keywords: 'CSSéducteur, coaching en séduction, formations en séduction, conférences, confiance en soi, style personnel, coachs renommés, Alex Hitchens, Stéphane Malassagne, Coach William, développement personnel, relations amoureuses',
+  author: 'CSSéducteur',
+  og: {
+    title: 'CSSéducteur | Coaching et Formations en Séduction',
+    description: 'Découvrez l’univers de CSSéducteur, votre expert en confiance et style pour maîtriser l’art de la séduction.',
+    type: 'website',
+    url: 'https://www.csseducteur.com',
+    image: 'https://www.csseducteur.com/images/csseducteur-og-image.jpg'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'CSSéducteur | Coaching en Séduction',
+    description: 'Apprenez les secrets de la séduction avec CSSéducteur. Coaching, formations, et conférences pour développer confiance et style.',
+    image: 'https://www.csseducteur.com/images/csseducteur-twitter-image.jpg',
+    site: '@CSSeducteur'
+  }
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content={metadata.og.title} />
+        <meta property="og:description" content={metadata.og.description} />
+        <meta property="og:type" content={metadata.og.type} />
+        <meta property="og:url" content={metadata.og.url} />
+        <meta property="og:image" content={metadata.og.image} />
+        <meta name="twitter:card" content={metadata.twitter.card} />
+        <meta name="twitter:title" content={metadata.twitter.title} />
+        <meta name="twitter:description" content={metadata.twitter.description} />
+        <meta name="twitter:image" content={metadata.twitter.image} />
+        <meta name="twitter:site" content={metadata.twitter.site} />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
