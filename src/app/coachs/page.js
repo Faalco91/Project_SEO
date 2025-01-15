@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './page.module.css';
-import alex from '../../../public/images/coachs/alex_hitchens.jpg';
-import william from '../../../public/images/coachs/william_coach.jpg';
-import malassagne from '../../../public/images/coachs/stephane_malassagne.jpg';
+import alex from '../../../public/images/coachs/alex_hitchens.webp';
+import william from '../../../public/images/coachs/william_coach.webp';
+import malassagne from '../../../public/images/coachs/stephane_malassagne.webp';
 export default function Coachs() {
   return (
     <div className={styles.container}>
@@ -42,6 +42,7 @@ export default function Coachs() {
               width={200}
               height={200}
               className={styles.coachImage}
+              loading='lazy'
             />
             <p>
               Alex Hitchens, célèbre pour ses méthodes innovantes en séduction, accompagne ses clients vers la réussite 
@@ -64,6 +65,7 @@ export default function Coachs() {
               width={200}
               height={200}
               className={styles.coachImage}
+              loading='lazy'
             />
             <p>
               Stéphane Malassagne apporte une expertise unique en communication interpersonnelle. 
@@ -86,6 +88,7 @@ export default function Coachs() {
               width={200}
               height={200}
               className={styles.coachImage}
+              loading='lazy'
             />
             <p>
               Avec une approche centrée sur le développement personnel, Coach William aide ses clients à surmonter leurs peurs 
