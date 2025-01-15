@@ -40,7 +40,7 @@ export default function Services() {
           <div className={styles.cardGrid}>
             <article className={styles.card}>
               <div className={styles.cardIcon}>
-                <Image src="/images/services/coaching-individuel.svg" alt="Icône de coaching individuel" width={64} height={64} />
+                <Image src="/images/services/coaching-individuel.svg" alt="Icône de coaching individuel" width={64} height={64} loading='lazy' />
               </div>
               <h3>Coaching Individuel</h3>
               <p>Bénéficiez d'un accompagnement personnalisé pour surmonter vos défis personnels et atteindre vos objectifs.</p>
@@ -51,7 +51,7 @@ export default function Services() {
 
             <article className={styles.card}>
               <div className={styles.cardIcon}>
-                <Image src="/images/services/coaching-groupe.svg" alt="Icône de coaching en groupe" width={64} height={64} />
+                <Image src="/images/services/coaching-groupe.svg" alt="Icône de coaching en groupe" width={64} height={64} loading='lazy' />
               </div>
               <h3>Coaching en Groupe</h3>
               <p>Participez à des sessions de groupe dynamiques pour apprendre et progresser avec d'autres.</p>
@@ -62,7 +62,7 @@ export default function Services() {
 
             <article className={styles.card}>
               <div className={styles.cardIcon}>
-                <Image src="/images/services/ateliers-pratiques.svg" alt="Icône d'ateliers pratiques" width={64} height={64} />
+                <Image src="/images/services/ateliers-pratiques.svg" alt="Icône d'ateliers pratiques" width={64} height={64} loading='lazy' />
               </div>
               <h3>Ateliers Pratiques</h3>
               <p>Découvrez des techniques pratiques et des exercices interactifs pour améliorer vos compétences en temps réel.</p>
@@ -73,7 +73,7 @@ export default function Services() {
 
             <article className={styles.card}>
               <div className={styles.cardIcon}>
-                <Image src="/images/services/conferences.svg" alt="Icône de conférences" width={64} height={64} />
+                <Image src="/images/services/conferences.svg" alt="Icône de conférences" width={64} height={64} loading='lazy' />
               </div>
               <h3>Conférences</h3>
               <p>Assistez à des conférences inspirantes pour découvrir les secrets de la séduction et du développement personnel.</p>
@@ -92,7 +92,7 @@ export default function Services() {
           <div className={styles.cardGrid}>
             <article className={styles.card}>
               <div className={styles.cardIcon}>
-                <Image src="/images/conseils/communication.svg" alt="Icône de communication" width={64} height={64} />
+                <Image src="/images/conseils/communication.svg" alt="Icône de communication" width={64} height={64} loading='lazy' />
               </div>
               <h3>L'Art de la Communication</h3>
               <p>Maîtrisez les subtilités du langage verbal et non-verbal pour créer des connexions profondes.</p>
@@ -103,7 +103,7 @@ export default function Services() {
 
             <article className={styles.card}>
               <div className={styles.cardIcon}>
-                <Image src="/images/conseils/charisme.svg" alt="Icône de charisme" width={64} height={64} />
+                <Image src="/images/conseils/charisme.svg" alt="Icône de charisme" width={64} height={64} loading='lazy' />
               </div>
               <h3>Le Charisme Naturel</h3>
               <p>Développez un charisme magnétique qui attire naturellement les autres vers vous.</p>
@@ -114,7 +114,7 @@ export default function Services() {
 
             <article className={styles.card}>
               <div className={styles.cardIcon}>
-                <Image src="/images/conseils/connexion.svg" alt="Icône de connexion" width={64} height={64} />
+                <Image src="/images/conseils/connexion.svg" alt="Icône de connexion" width={64} height={64} loading='lazy' />
               </div>
               <h3>La Connexion Authentique</h3>
               <p>Créez des liens profonds et sincères qui durent dans le temps.</p>
@@ -138,7 +138,7 @@ export default function Services() {
           <div className={styles.cardGrid}>
             <article className={styles.card}>
               <div className={styles.cardIcon}>
-                <Image src="/images/conseils/croissance.svg" alt="Icône de croissance" width={64} height={64} />
+                <Image src="/images/conseils/croissance.svg" alt="Icône de croissance" width={64} height={64} loading='lazy' />
               </div>
               <h3>La Croissance Personnelle</h3>
               <p>Découvrez les clés pour évoluer constamment et devenir la meilleure version de vous-même.</p>
@@ -149,7 +149,7 @@ export default function Services() {
 
             <article className={styles.card}>
               <div className={styles.cardIcon}>
-                <Image src="/images/conseils/equilibre.svg" alt="Icône d'équilibre" width={64} height={64} />
+                <Image src="/images/conseils/equilibre.svg" alt="Icône d'équilibre" width={64} height={64} loading='lazy' />
               </div>
               <h3>L'Équilibre de Vie</h3>
               <p>Trouvez l'harmonie parfaite entre vie personnelle, professionnelle et amoureuse.</p>
@@ -160,7 +160,7 @@ export default function Services() {
 
             <article className={styles.card}>
               <div className={styles.cardIcon}>
-                <Image src="/images/conseils/resilience.svg" alt="Icône de résilience" width={64} height={64} />
+                <Image src="/images/conseils/resilience.svg" alt="Icône de résilience" width={64} height={64} loading='lazy' />
               </div>
               <h3>La Résilience Émotionnelle</h3>
               <p>Développez une force intérieure à toute épreuve pour surmonter les obstacles.</p>

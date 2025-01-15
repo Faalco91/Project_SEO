@@ -39,19 +39,19 @@ const testimonials = [
   {
     quote: "Grâce à CSSéducteur, j'ai découvert un charisme naturel que je ne soupçonnais pas avoir. Sa méthode unique mêlant super-pouvoirs de séduction et coaching personnalisé m'a permis de transformer ma vie amoureuse. Le coaching en séduction proposé par CSSéducteur est véritablement révolutionnaire !",
     author: "Thomas D.",
-    avatar: "/images/avatars/thomas.jpg",
+    avatar: "/images/avatars/thomas.webp",
     rating: 5
   },
   {
     quote: "Avant de découvrir CSSéducteur, je ne croyais pas qu'un coaching en séduction pouvait changer ma vie. Mais grâce à l'approche unique de CSSéducteur, alliant charisme et super-pouvoirs, j'ai vu une transformation complète dans mes interactions sociales. C'est vraiment le meilleur choix pour un coaching en séduction efficace !",
     author: "Sophie M.",
-    avatar: "/images/avatars/sophie.jpg",
+    avatar: "/images/avatars/sophie.webp",
     rating: 5
   },
   {
     quote: "CSSéducteur m'a permis de découvrir un tout nouveau niveau de confiance en moi. Son coaching en séduction, couplé à des super-pouvoirs d'attraction, m'a offert des résultats exceptionnels. Si vous cherchez à booster vos compétences en séduction, CSSéducteur est le coach qu'il vous faut !",
     author: "Marc L.",
-    avatar: "/images/avatars/marc.jpg",
+    avatar: "/images/avatars/marc.webp",
     rating: 5
   }
 ]

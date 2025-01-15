@@ -86,6 +86,7 @@ export default function Programmes() {
                 alt="Icône du pouvoir de séduction magnétique"
                 width={64}
                 height={64}
+                loading='lazy'
                 className={styles.icon}
               />
             </div>
@@ -118,6 +119,7 @@ export default function Programmes() {
                 alt="Icône du pouvoir d'empathie émotionnelle"
                 width={64}
                 height={64}
+                loading='lazy'
                 className={styles.icon}
               />
             </div>
@@ -150,6 +152,7 @@ export default function Programmes() {
                 alt="Icône du pouvoir de présence magnétique"
                 width={64}
                 height={64}
+                loading='lazy'
                 className={styles.icon}
               />
             </div>
