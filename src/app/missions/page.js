@@ -22,10 +22,11 @@ export default function Missions() {
             CSSéducteur
           </Link>
           <div className={styles.navLinks}>
-            <Link href="/pouvoirs" aria-label="Les pouvoirs de CSSéducteur">Pouvoirs</Link>
-            <Link href="/conseils" aria-label="Conseils de séduction par CSSéducteur">Conseils</Link>
-            <Link href="/missions" aria-label="Missions de CSSéducteur">Missions</Link>
-            <Link href="/histoire" aria-label="Histoire de CSSéducteur">Histoire</Link>
+          <Link href="/">Accueil</Link>
+            <Link href="/conseils">Services</Link>
+            <Link href="/programmes">Programmes</Link>
+            <Link href="/coachs">Coachs</Link>
+            <Link href="/blog">Blog</Link>
           </div>
         </nav>
       </header>

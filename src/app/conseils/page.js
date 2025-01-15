@@ -20,8 +20,8 @@ export default function Services() {
             <Link href="/">Accueil</Link>
             <Link href="/conseils">Services</Link>
             <Link href="/programmes">Programmes</Link>
-            <Link href="/histoire">Coachs</Link>
-            <Link href="/histoire">Blog</Link>
+            <Link href="/coachs">Coachs</Link>
+            <Link href="/blog">Blog</Link>
           </div>
         </nav>
 
@@ -174,6 +174,23 @@ export default function Services() {
             "Chaque défi est une opportunité de grandir et de se surpasser."
             <cite>- CSSéducteur</cite>
           </blockquote>
+        </section>
+
+        {/* Section Contenu Unique */}
+        <section className={styles.section}>
+          <h2>Pourquoi choisir CSSéducteur pour votre coaching ?</h2>
+          <p className={styles.sectionDesc}>Découvrez les avantages uniques offerts par CSSéducteur</p>
+          <p>CSSéducteur se distingue par une approche holistique du développement personnel et de la séduction. Nous utilisons des techniques éprouvées et personnalisées pour chaque individu, assurant une transformation authentique et durable.</p>
+          <p>Nos clients témoignent de changements positifs majeurs dans leur vie, grâce à notre engagement à offrir un accompagnement de qualité. Que ce soit à travers des sessions individuelles ou des ateliers de groupe, notre objectif est de vous aider à atteindre votre plein potentiel.</p>
+        </section>
+
+        {/* Appel à l'action optimisé */}
+        <section className={styles.section}>
+          <h2>Transformez votre vie dès aujourd'hui</h2>
+          <p className={styles.sectionDesc}>Explorez nos services et trouvez le programme qui vous convient</p>
+          <Link href="/contact" className={styles.ctaButton}>
+            Contactez-nous pour un premier rendez-vous
+          </Link>
         </section>
       </main>
 

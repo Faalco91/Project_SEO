@@ -1,18 +1,19 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './programmes.module.css'
+
 const testimonials = [
   {
     author: 'Thomas D.',
     rating: 5,
-    text: 'Grâce au pouvoir de présence magnétique de CSSéducteur, j\'ai gagné une confiance incroyable en moi.',
+    text: "Grâce aux enseignements de CSSéducteur, j'ai gagné une confiance incroyable en moi et j'ai pu transformer ma vie amoureuse.",
   },
   {
     author: 'Sophie M.',
     rating: 5,
-    text: 'Son pouvoir d\'empathie émotionnelle m\'a permis de mieux comprendre mes relations.',
+    text: "CSSéducteur m'a appris à comprendre mes émotions et celles des autres, renforçant ainsi mes relations personnelles.",
   },
-]
+];
 
 export default function Programmes() {
   return (
@@ -23,10 +24,11 @@ export default function Programmes() {
             CSSéducteur
           </Link>
           <div className={styles.navLinks}>
-            <Link href="/programmes" aria-label="Nos programmes Séduction">Programmes</Link>
-            <Link href="/conseils" aria-label="Conseils de séduction par CSSéducteur">Conseils</Link>
-            <Link href="/missions" aria-label="Missions de CSSéducteur">Missions</Link>
-            <Link href="/histoire" aria-label="Histoire de CSSéducteur">Histoire</Link>
+          <Link href="/">Accueil</Link>
+            <Link href="/conseils">Services</Link>
+            <Link href="/programmes">Programmes</Link>
+            <Link href="/coachs">Coachs</Link>
+            <Link href="/blog">Blog</Link>
           </div>
         </nav>
       </header>
@@ -38,12 +40,11 @@ export default function Programmes() {
             <div className={styles.titleWrapper}>
               <h1 id="hero-title" className={styles.animatedTitle}>
                 <span className={styles.titleLine}>Découvrez</span>
-                <span className={styles.titleLine}>Mes Super-Pouvoirs</span>
+                <span className={styles.titleLine}>les Programmes</span>
                 <span className={styles.titleAccent}>de CSSéducteur</span>
               </h1>
               <p className={styles.heroTagline}>
-                De <span className={styles.accent}>Super-Héros Marvel</span> à{' '}
-                <span className={styles.accent}>CSSéducteur</span>
+                Transformez votre vie amoureuse avec l'expertise unique de <span className={styles.accent}>CSSéducteur</span>
               </p>
             </div>
             <div className={styles.introColumns}>
@@ -54,8 +55,7 @@ export default function Programmes() {
                   </svg>
                 </div>
                 <p>
-                  Mes pouvoirs, autrefois utilisés pour sauver le monde,
-                  sont maintenant à votre service pour transformer votre vie amoureuse.
+                  Grâce à CSSéducteur, vous allez découvrir comment utiliser vos pouvoirs de séduction naturelle pour transformer vos relations amoureuses et sociales.
                 </p>
               </div>
               <div className={styles.introColumn}>
@@ -65,26 +65,20 @@ export default function Programmes() {
                   </svg>
                 </div>
                 <p>
-                  Une expertise unique qui allie la puissance d'un héros Marvel
-                  à l'art subtil de la séduction moderne.
+                  Découvrez l'art de la séduction avec les conseils et méthodes éprouvées de CSSéducteur, qui combinent psychologie et influence positive.
                 </p>
               </div>
             </div>
             <div className={styles.scrollIndicator}>
-              <span className={styles.scrollText}>Découvrez mes pouvoirs</span>
+              <span className={styles.scrollText}>Explorez mes super-pouvoirs</span>
               <svg className={styles.scrollArrow} viewBox="0 0 24 24">
                 <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
               </svg>
             </div>
           </div>
-          <div className={styles.heroShapes}>
-            <div className={styles.shape1}></div>
-            <div className={styles.shape2}></div>
-            <div className={styles.shape3}></div>
-          </div>
         </section>
 
-        <section className={styles.powersGrid} aria-label="Liste des super-pouvoirs">
+        <section className={styles.powersGrid} aria-label="Les Super-Pouvoirs de CSSéducteur">
           <article className={styles.powerCard}>
             <div className={styles.powerIcon}>
               <Image
@@ -95,14 +89,12 @@ export default function Programmes() {
                 className={styles.icon}
               />
             </div>
-            <h2>La Séduction Magnétique</h2>
+            <h2>La Séduction Magnétique de CSSéducteur</h2>
             <p className={styles.powerOrigin}>
-              Autrefois utilisé pour charmer mes adversaires et les détourner du mal,
-              ce pouvoir créait une aura irrésistible autour de moi.
+              Développez une aura irrésistible avec la méthode CSSéducteur, qui a transformé des milliers de vies.
             </p>
             <p className={styles.powerNow}>
-              Aujourd'hui, j'enseigne comment développer votre propre charisme naturel
-              pour attirer les bonnes personnes dans votre vie.
+              Apprenez à cultiver votre charisme naturel et à attirer les bonnes personnes dans votre vie.
             </p>
             <div className={styles.powerStats}>
               <div className={styles.stat}>
@@ -115,7 +107,7 @@ export default function Programmes() {
               </div>
             </div>
             <Link href="/programmes/seduction" className={styles.powerLink}>
-              En savoir plus
+              En savoir plus sur la Séduction Magnétique
             </Link>
           </article>
 
@@ -129,14 +121,12 @@ export default function Programmes() {
                 className={styles.icon}
               />
             </div>
-            <h2>L'Empathie Émotionnelle</h2>
+            <h2>L'Empathie Émotionnelle de CSSéducteur</h2>
             <p className={styles.powerOrigin}>
-              Ce pouvoir me permettait de ressentir et comprendre les émotions
-              des personnes en détresse pour mieux les aider.
+              Grâce à CSSéducteur, vous comprendrez mieux les émotions et pourrez créer des liens plus profonds et sincères.
             </p>
             <p className={styles.powerNow}>
-              Je l'utilise pour vous aider à mieux comprendre vos émotions et
-              celles des autres, créant des connexions plus authentiques.
+              Apprenez à utiliser l'empathie émotionnelle pour améliorer vos relations et résoudre les conflits efficacement.
             </p>
             <div className={styles.powerStats}>
               <div className={styles.stat}>
@@ -145,11 +135,11 @@ export default function Programmes() {
               </div>
               <div className={styles.stat}>
                 <span className={styles.number}>500+</span>
-                <span className={styles.label}>relations améliorées</span>
+                <span className={styles.label}>relations renforcées</span>
               </div>
             </div>
             <Link href="/programmes/empathie" className={styles.powerLink}>
-              En savoir plus
+              En savoir plus sur l'Empathie Émotionnelle
             </Link>
           </article>
 
@@ -163,14 +153,12 @@ export default function Programmes() {
                 className={styles.icon}
               />
             </div>
-            <h2>La Présence Magnétique</h2>
+            <h2>La Présence Magnétique de CSSéducteur</h2>
             <p className={styles.powerOrigin}>
-              Ma présence héroïque inspirait confiance et respect,
-              permettant de calmer les foules en panique.
+              Développez une présence qui capte l'attention et inspire la confiance, grâce aux enseignements de CSSéducteur.
             </p>
             <p className={styles.powerNow}>
-              Je vous apprends à développer une présence qui attire
-              naturellement l'attention et inspire la confiance.
+              Apprenez à marquer les esprits et à devenir la personne qui attire naturellement l'attention et le respect.
             </p>
             <div className={styles.powerStats}>
               <div className={styles.stat}>
@@ -179,27 +167,27 @@ export default function Programmes() {
               </div>
               <div className={styles.stat}>
                 <span className={styles.number}>800+</span>
-                <span className={styles.label}>transformations</span>
+                <span className={styles.label}>transformations réussies</span>
               </div>
             </div>
             <Link href="/programmes/presence" className={styles.powerLink}>
-              En savoir plus
+              En savoir plus sur la Présence Magnétique
             </Link>
           </article>
         </section>
 
         <section className={styles.coachingSection} aria-labelledby="coaching-title">
-          <h2 id="coaching-title">Formules de Coaching Personnalisé</h2>
+          <h2 id="coaching-title">Coaching Personnalisé CSSéducteur</h2>
           <div className={styles.coachingGrid}>
             <div className={styles.coachingCard}>
               <div className={styles.coachingHeader}>
-                <h3>Initiation Héroïque</h3>
+                <h3>Initiation à la Séduction Magnétique</h3>
                 <div className={styles.price}>99€</div>
               </div>
               <ul className={styles.coachingFeatures}>
                 <li>1 session de coaching individuel (1h)</li>
                 <li>Analyse de votre profil de séduction</li>
-                <li>Plan d'action personnalisé</li>
+                <li>Plan d'action personnalisé CSSéducteur</li>
                 <li>Support par email pendant 1 semaine</li>
               </ul>
               <Link href="/contact" className={styles.coachingButton}>
@@ -210,47 +198,20 @@ export default function Programmes() {
             <div className={`${styles.coachingCard} ${styles.featured}`}>
               <div className={styles.featuredBadge}>Plus populaire</div>
               <div className={styles.coachingHeader}>
-                <h3>Transformation Légendaire</h3>
+                <h3>Transformation Légendaire CSSéducteur</h3>
                 <div className={styles.price}>299€</div>
               </div>
               <ul className={styles.coachingFeatures}>
-                <li>3 sessions de coaching individuel (3h)</li>
-                <li>Analyse approfondie de votre profil</li>
-                <li>Plan d'action détaillé sur 3 mois</li>
-                <li>Exercices pratiques personnalisés</li>
-                <li>Support WhatsApp prioritaire</li>
-                <li>Accès aux ressources premium</li>
+                <li>4 sessions de coaching intensif (1h chacune)</li>
+                <li>Analyse comportementale complète</li>
+                <li>Stratégie de séduction et d'empathie sur-mesure</li>
+                <li>Suivi pendant 1 mois avec feedback hebdomadaire</li>
               </ul>
               <Link href="/contact" className={styles.coachingButton}>
-                Commencer ma transformation
-              </Link>
-            </div>
-
-            <div className={styles.coachingCard}>
-              <div className={styles.coachingHeader}>
-                <h3>Maîtrise Ultime</h3>
-                <div className={styles.price}>599€</div>
-              </div>
-              <ul className={styles.coachingFeatures}>
-                <li>6 sessions de coaching individuel (6h)</li>
-                <li>Analyse complète de votre profil</li>
-                <li>Plan d'action sur 6 mois</li>
-                <li>Accompagnement personnalisé intensif</li>
-                <li>Support WhatsApp 24/7</li>
-                <li>Accès à vie aux ressources premium</li>
-                <li>Suivi mensuel post-programme</li>
-              </ul>
-              <Link href="/contact" className={styles.coachingButton}>
-                Devenir une légende
+                Je réserve mon programme légendaire
               </Link>
             </div>
           </div>
-          <p className={styles.disclaimer}>
-            * Ceci est un site humoristique créé dans le cadre d'un projet étudiant. 
-            Aucun super-héros n'a été maltraité durant la création de ce site, 
-            et aucun pouvoir de séduction n'est réellement à vendre. 
-            Gardez le sourire ! 😉
-          </p>
         </section>
 
         <section className={styles.testimonials} aria-labelledby="testimonials-title">

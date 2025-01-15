@@ -70,8 +70,8 @@ export default function Home() {
             <Link href="/">Accueil</Link>
             <Link href="/conseils">Services</Link>
             <Link href="/programmes">Programmes</Link>
-            <Link href="/histoire">Coachs</Link>
-            <Link href="/histoire">Blog</Link>
+            <Link href="/">Coachs</Link>
+            <Link href="/blog">Blog</Link>
           </div>
         </nav>
       </header>

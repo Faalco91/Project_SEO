@@ -1,10 +1,10 @@
 export const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Les Super-Pouvoirs de CSSéducteur - Du Super-Héros au Coach en Séduction',
-  description: 'Découvrez comment CSSéducteur utilise ses super-pouvoirs d\'ancien héros Marvel pour transformer votre vie amoureuse. Expertise unique en séduction et développement personnel.',
+  headline: 'Découvrez nos Coachs - CSSéducteur',
+  description: 'Rencontrez les coachs experts de CSSéducteur et explorez leurs parcours et spécialités.',
   author: {
-    '@type': 'Person',
+    '@type': 'Organization',
     name: 'CSSéducteur',
     url: 'https://csseducteur.fr',
   },
@@ -16,10 +16,11 @@ export const jsonLd = {
       url: 'https://csseducteur.fr/images/logo.png',
     },
   },
-  mainEntityOfPage: {
-    '@type': 'WebPage',
-    '@id': 'https://csseducteur.fr/pouvoirs',
-  },
+  image: 'https://csseducteur.fr/images/coachs.jpg',
   datePublished: '2023-01-01T00:00:00+00:00',
   dateModified: new Date().toISOString(),
-} 
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': 'https://csseducteur.fr/coachs',
+  },
+}
