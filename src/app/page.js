@@ -88,7 +88,7 @@ export default function Home() {
               CSSéducteur : Maîtrisez l'Art de la Séduction avec Style
             </h1>
             <p className={styles.heroTagline}>
-              Programmes de Coaching en Séduction, Mentors Dévoués et Blog Inspirant pour Révéler le Séducteur en Vous
+              Programmes de Coaching en Séduction, Mentors Dévoués et Blog Inspirant pour Révéler le Séducteur en Vous !
             </p>
             <Link href="/programmes" className={styles.ctaButton}>
               Commencez Votre Transformation
