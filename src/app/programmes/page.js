@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from './programmes.module.css'
+import styles from './page.module.css'
 
 const testimonials = [
   {
@@ -25,7 +25,7 @@ export default function Programmes() {
           </Link>
           <div className={styles.navLinks}>
           <Link href="/">Accueil</Link>
-            <Link href="/conseils">Services</Link>
+            <Link href="/services">Services</Link>
             <Link href="/programmes">Programmes</Link>
             <Link href="/coachs">Coachs</Link>
             <Link href="/blog">Blog</Link>
@@ -39,9 +39,7 @@ export default function Programmes() {
           <div className={styles.heroContent}>
             <div className={styles.titleWrapper}>
               <h1 id="hero-title" className={styles.animatedTitle}>
-                <span className={styles.titleLine}>Découvrez</span>
-                <span className={styles.titleLine}>les Programmes</span>
-                <span className={styles.titleAccent}>de CSSéducteur</span>
+                <span className={styles.titleLine}>Découvrez les Programmes de CSSéducteur</span>
               </h1>
               <p className={styles.heroTagline}>
                 Transformez votre vie amoureuse avec l'expertise unique de <span className={styles.accent}>CSSéducteur</span>
@@ -215,6 +213,10 @@ export default function Programmes() {
               </Link>
             </div>
           </div>
+          <p className={styles.disclaimer}>
+            🎭 Attention : Ceci est un site humoristique créé dans le cadre d'un projet étudiant. 
+            aucun service de coaching n'est réellement proposé. Gardez le sourire et profitez de l'humour ! 😉
+          </p>
         </section>
 
         <section className={styles.testimonials} aria-labelledby="testimonials-title">
@@ -231,11 +233,11 @@ export default function Programmes() {
             ))}
           </div>
         </section>
-      </main>
 
-      <footer className={styles.footer}>
-        <p>&copy; 2023 CSSéducteur - Le Super-Héros qui Révolutionne la Séduction - Tous droits réservés</p>
-      </footer>
+        <footer className={styles.footer}>
+          <p>&copy; 2025 CSSéducteur - Tous droits réservés</p>
+        </footer>
+      </main>
     </div>
   )
 } 
