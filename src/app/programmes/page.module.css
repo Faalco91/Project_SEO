@@ -2,17 +2,16 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: var(--background);
 }
 
-/* Header et Navigation */
+/* Header Styles */
 .header {
-  background-color: var(--primary-dark);
+  background-color: #000000;
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav {
@@ -24,11 +23,11 @@
 }
 
 .logo {
-  color: var(--primary-red);
+  color: #E62429;
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  transition: text-shadow var(--transition-base);
+  transition: text-shadow 0.3s ease;
 }
 
 .logo:hover {
@@ -41,7 +40,7 @@
 }
 
 .navLinks a {
-  color: var(--white);
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   position: relative;
@@ -55,28 +54,42 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--primary-red);
-  transition: width var(--transition-base);
+  background: #E62429;
+  transition: width 0.3s ease;
 }
 
 .navLinks a:hover {
-  color: var(--primary-red);
+  color: #E62429;
 }
 
 .navLinks a:hover::after {
   width: 100%;
 }
 
+/* Media Queries pour le header */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
 /* Section Héro Modernisée */
 .heroSection {
-  min-height: 100vh;
+  min-height: 80vh;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-  padding: 4rem 2rem;
+  background-color: #000000;
+  padding: 3rem 2rem;
 }
 
 .particlesBackground {
@@ -106,27 +119,24 @@
 
 .titleWrapper {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   opacity: 0;
   animation: fadeInUp 1s ease-out forwards;
 }
 
 .animatedTitle {
-  font-size: 4.5rem;
+  font-size: 3rem;
   line-height: 1.2;
-  margin-bottom: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-bottom: 1.2rem;
+  text-align: center;
 }
 
 .titleLine {
-  display: block;
+  display: inline;
   background: linear-gradient(45deg, #E5383B, #FF1744);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
-  transform: translateY(20px);
   animation: titleLineReveal 0.8s ease-out forwards;
 }
 
@@ -138,7 +148,7 @@
   display: block;
   font-size: 3.5rem;
   color: #E5383B;
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
   opacity: 0;
   transform: translateY(20px);
   animation: titleLineReveal 0.8s ease-out forwards 0.6s;
@@ -152,11 +162,15 @@
 }
 
 .heroTagline {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: rgba(255, 255, 255, 0.9);
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   opacity: 0;
   animation: fadeIn 1s ease-out forwards 0.9s;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
 }
 
 .accent {
@@ -306,15 +320,19 @@
   }
 
   .animatedTitle {
+    font-size: 2rem;
+  }
+
+  .titleLine {
     font-size: 2.5rem;
   }
 
   .titleAccent {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .heroTagline {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .introColumns {
@@ -339,34 +357,52 @@
 
 .powerCard {
   background: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
   position: relative;
   overflow: hidden;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(229, 56, 59, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .powerCard:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(229, 56, 59, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.powerCard::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, rgba(229, 56, 59, 0.1), transparent);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+.powerCard:hover .powerIcon {
+  transform: scale(1.1);
 }
 
-.powerCard:hover::before {
-  opacity: 1;
+.powerCard:hover .powerLinkText {
+  color: #E62429;
+}
+
+.powerLinkText {
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.powerLinkText::after {
+  content: '→';
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.powerCard:hover .powerLinkText::after {
+  transform: translateX(5px);
 }
 
 .powerIcon {
@@ -430,6 +466,8 @@
   text-decoration: none;
   margin-top: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  margin: 3rem auto 0;
 }
 
 .powerLink:hover {
@@ -440,7 +478,7 @@
 /* Témoignages */
 .testimonials {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  background: #000000;
 }
 
 .testimonials h2 {
@@ -492,7 +530,7 @@
 /* Section Coaching */
 .coachingSection {
   padding: 6rem 2rem;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  background: #000000;
 }
 
 .coachingSection h2 {
@@ -503,6 +541,15 @@
   background: linear-gradient(45deg, #E5383B, #FF1744);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.sectionDesc {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 .coachingGrid {
@@ -588,9 +635,9 @@
   color: #E5383B;
 }
 
-.coachingButton {
+.contactButton {
   display: block;
-  background: linear-gradient(45deg, #E5383B, #FF1744);
+  background: #E62429;
   color: white;
   text-align: center;
   padding: 1rem 2rem;
@@ -598,9 +645,11 @@
   text-decoration: none;
   font-weight: bold;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  margin: 3rem auto 0;
 }
 
-.coachingButton:hover {
+.contactButton:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(229, 56, 59, 0.3);
 }

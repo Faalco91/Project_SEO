@@ -1,0 +1,309 @@
+.main {
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('/images/communication-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+}
+
+.heroContent {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+}
+
+.section {
+  padding: 4rem 2rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: #E62429;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.tableOfContents {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 2rem 0;
+}
+
+.tableOfContents h2 {
+  color: #E62429;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.tableOfContents ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tableOfContents li {
+  margin: 0.8rem 0;
+}
+
+.tableOfContents a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.tableOfContents a:hover {
+  color: #E62429;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.contentCard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.contentCard:hover {
+  transform: translateY(-5px);
+}
+
+.contentCard h3 {
+  color: #E62429;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.pillarsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.pillarCard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.pillarCard:hover {
+  transform: translateY(-5px);
+}
+
+.pillarCard h3 {
+  color: #E62429;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.techniquesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.techniqueCard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.techniqueCard:hover {
+  transform: translateY(-5px);
+}
+
+.techniqueCard h3 {
+  color: #E62429;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.stepCard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.stepCard:hover {
+  transform: translateY(-5px);
+}
+
+.stepCard h3 {
+  color: #E62429;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.ctaSection {
+  background: linear-gradient(rgba(230, 36, 41, 0.1), rgba(230, 36, 41, 0.2));
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.ctaButton {
+  background: #E62429;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.ctaButton:hover {
+  background: #ff2c31;
+  transform: scale(1.05);
+  color: white;
+  text-decoration: none;
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.faqItem {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.faqItem h3 {
+  color: #E62429;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.nextPageButton {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(230, 36, 41, 0.9);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 90;
+  text-decoration: none;
+}
+
+.nextPageButton:hover {
+  background: #ff2c31;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 0 15px rgba(230, 36, 41, 0.3);
+}
+
+.footer {
+  background: #1a1a1a;
+  padding: 2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .section {
+    padding: 3rem 1rem;
+  }
+  
+  .contentGrid,
+  .pillarsGrid,
+  .techniquesGrid,
+  .stepsGrid,
+  .faqGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .tableOfContents {
+    padding: 1.5rem;
+  }
+  
+  .tableOfContents a {
+    font-size: 1rem;
+  }
+} 

@@ -1,0 +1,250 @@
+.main {
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 4rem 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #E62429;
+}
+
+.text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ffffff;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.benefitsGrid,
+.methodGrid,
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.benefitCard,
+.methodCard,
+.stepCard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefitCard:hover,
+.methodCard:hover,
+.stepCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(230, 36, 41, 0.1);
+}
+
+.benefitCard h3,
+.methodCard h3,
+.stepCard h3 {
+  color: #E62429;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.testimonialCard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-5px);
+}
+
+.testimonialCard p {
+  font-style: italic;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.testimonialCard cite {
+  color: #E62429;
+  font-style: normal;
+}
+
+.ctaSection {
+  background: linear-gradient(rgba(230, 36, 41, 0.1), rgba(230, 36, 41, 0.2));
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.ctaButton {
+  background: #E62429;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.ctaButton:hover {
+  background: #ff2c31;
+  transform: scale(1.05);
+  color: white;
+  text-decoration: none;
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.faqItem {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: left;
+}
+
+.faqItem h3 {
+  color: #E62429;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.prevPageButton {
+  position: fixed;
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(230, 36, 41, 0.9);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 90;
+  text-decoration: none;
+}
+
+.prevPageButton:hover {
+  background: #ff2c31;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 0 15px rgba(230, 36, 41, 0.3);
+}
+
+.footer {
+  background: #1a1a1a;
+  padding: 2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .section {
+    padding: 3rem 1rem;
+  }
+  
+  .benefitsGrid,
+  .methodGrid,
+  .stepsGrid,
+  .testimonialsGrid,
+  .faqGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .benefitCard,
+  .methodCard,
+  .stepCard,
+  .testimonialCard,
+  .faqItem {
+    padding: 1.5rem;
+  }
+} 
