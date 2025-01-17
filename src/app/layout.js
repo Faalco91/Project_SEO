@@ -1,12 +1,11 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
-import SocialBar from '../components/SocialBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'CSSéducteur - Coaching en Séduction',
-  description: 'Découvrez l\'art de la séduction avec CSSéducteur. Coaching personnalisé, ateliers et ressources pour développer votre charisme et votre confiance.',
+  title: 'CSSéducteur | Expert en Confiance et Style pour la Séduction',
+  description: 'CSSéducteur, l’agence de coaching en séduction reconnue pour ses formations individuelles, en groupe, et ses conférences inspirantes. Apprenez à maîtriser la confiance et le style avec nos coachs renommés.',
   keywords: 'CSSéducteur, coaching en séduction, formations en séduction, conférences, confiance en soi, style personnel, coachs renommés, Alex Hitchens, Stéphane Malassagne, Coach William, développement personnel, relations amoureuses',
   author: 'CSSéducteur',
   og: {
@@ -42,10 +41,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:image" content={metadata.twitter.image} />
         <meta name="twitter:site" content={metadata.twitter.site} />
       </head>
-      <body className={inter.className}>
-        <SocialBar />
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
