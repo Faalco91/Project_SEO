@@ -1,0 +1,391 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  color: #E62429;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: text-shadow 0.3s ease;
+}
+
+.logo:hover {
+  text-shadow: 0 0 10px rgba(230, 36, 41, 0.5);
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.navLinks a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.navLinks a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #E62429;
+  transition: width 0.3s ease;
+}
+
+.navLinks a:hover::after {
+  width: 100%;
+}
+
+.main {
+  flex: 1;
+}
+
+.hero {
+  min-height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, #E62429, #ff6b6e);
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 1.2;
+}
+
+.heroImageContainer {
+  margin: 2rem auto;
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.heroImage {
+  border-radius: 50%;
+  border: 4px solid #E62429;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.heroImage:hover {
+  transform: scale(1.05);
+}
+
+.introduction {
+  max-width: 800px;
+  margin: 2rem auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: #E62429;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 3rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #E62429;
+  margin-bottom: 1rem;
+}
+
+.quote {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid #E62429;
+}
+
+.response {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.benefitCard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.benefitCard:hover {
+  transform: translateY(-5px);
+}
+
+.emoji {
+  color: #E62429;
+  font-size: 1.5rem;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.serviceCard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+}
+
+.serviceCard h3 {
+  color: #E62429;
+  margin-bottom: 1rem;
+}
+
+.testimonialSection {
+  background: rgba(230, 36, 41, 0.05);
+  padding: 4rem 2rem;
+}
+
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonialCard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-5px);
+}
+
+.testimonialCard p {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.testimonialCard cite {
+  color: #E62429;
+  font-style: normal;
+}
+
+.socialGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.socialCard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.socialCard:hover {
+  transform: translateY(-5px);
+}
+
+.comment {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.response {
+  color: #E62429;
+  font-weight: 500;
+}
+
+.ctaSection {
+  background: linear-gradient(45deg, rgba(230, 36, 41, 0.1), rgba(230, 36, 41, 0.2));
+  text-align: center;
+  padding: 5rem 2rem;
+  margin-top: 4rem;
+}
+
+.ctaTitle {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.ctaText {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  background: #E62429;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  background: #ff2c31;
+  transform: scale(1.05);
+}
+
+.footer {
+  background: #1a1a1a;
+  padding: 2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.socialIcon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  padding: 0.8rem;
+}
+
+.socialIcon svg {
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.socialIcon:hover {
+  background: #E62429;
+  transform: translateY(-5px);
+}
+
+.socialIcon:hover svg {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .introduction {
+    font-size: 1.1rem;
+  }
+
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .content,
+  .benefitsGrid,
+  .servicesGrid,
+  .testimonialGrid,
+  .socialGrid {
+    grid-template-columns: 1fr;
+  }
+} 

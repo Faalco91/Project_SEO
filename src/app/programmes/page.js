@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from './programmes.module.css'
+import styles from './page.module.css'
 
 const testimonials = [
   {
@@ -25,7 +25,7 @@ export default function Programmes() {
           </Link>
           <div className={styles.navLinks}>
           <Link href="/">Accueil</Link>
-            <Link href="/conseils">Services</Link>
+            <Link href="/services">Services</Link>
             <Link href="/programmes">Programmes</Link>
             <Link href="/coachs">Coachs</Link>
             <Link href="/blog">Blog</Link>
@@ -39,9 +39,7 @@ export default function Programmes() {
           <div className={styles.heroContent}>
             <div className={styles.titleWrapper}>
               <h1 id="hero-title" className={styles.animatedTitle}>
-                <span className={styles.titleLine}>Découvrez</span>
-                <span className={styles.titleLine}>les Programmes</span>
-                <span className={styles.titleAccent}>de CSSéducteur</span>
+                <span className={styles.titleLine}>Découvrez les Programmes de CSSéducteur</span>
               </h1>
               <p className={styles.heroTagline}>
                 Transformez votre vie amoureuse avec l'expertise unique de <span className={styles.accent}>CSSéducteur</span>
@@ -69,17 +67,11 @@ export default function Programmes() {
                 </p>
               </div>
             </div>
-            <div className={styles.scrollIndicator}>
-              <span className={styles.scrollText}>Explorez mes super-pouvoirs</span>
-              <svg className={styles.scrollArrow} viewBox="0 0 24 24">
-                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
-              </svg>
-            </div>
           </div>
         </section>
 
         <section className={styles.powersGrid} aria-label="Les Super-Pouvoirs de CSSéducteur">
-          <article className={styles.powerCard}>
+          <Link href="/programmes/seduction" className={styles.powerCard}>
             <div className={styles.powerIcon}>
               <Image
                 src="/images/programmes/seduction.svg"
@@ -107,12 +99,12 @@ export default function Programmes() {
                 <span className={styles.label}>vies transformées</span>
               </div>
             </div>
-            <Link href="/programmes/seduction" className={styles.powerLink}>
+            <span className={styles.powerLinkText}>
               En savoir plus sur la Séduction Magnétique
-            </Link>
-          </article>
+            </span>
+          </Link>
 
-          <article className={styles.powerCard}>
+          <Link href="/programmes/empathie" className={styles.powerCard}>
             <div className={styles.powerIcon}>
               <Image
                 src="/images/programmes/empathie.svg"
@@ -140,12 +132,12 @@ export default function Programmes() {
                 <span className={styles.label}>relations renforcées</span>
               </div>
             </div>
-            <Link href="/programmes/empathie" className={styles.powerLink}>
+            <span className={styles.powerLinkText}>
               En savoir plus sur l'Empathie Émotionnelle
-            </Link>
-          </article>
+            </span>
+          </Link>
 
-          <article className={styles.powerCard}>
+          <Link href="/programmes/presence" className={styles.powerCard}>
             <div className={styles.powerIcon}>
               <Image
                 src="/images/programmes/presence.svg"
@@ -173,10 +165,10 @@ export default function Programmes() {
                 <span className={styles.label}>transformations réussies</span>
               </div>
             </div>
-            <Link href="/programmes/presence" className={styles.powerLink}>
+            <span className={styles.powerLinkText}>
               En savoir plus sur la Présence Magnétique
-            </Link>
-          </article>
+            </span>
+          </Link>
         </section>
 
         <section className={styles.coachingSection} aria-labelledby="coaching-title">
@@ -193,9 +185,6 @@ export default function Programmes() {
                 <li>Plan d'action personnalisé CSSéducteur</li>
                 <li>Support par email pendant 1 semaine</li>
               </ul>
-              <Link href="/contact" className={styles.coachingButton}>
-                Réserver ma session
-              </Link>
             </div>
 
             <div className={`${styles.coachingCard} ${styles.featured}`}>
@@ -210,11 +199,11 @@ export default function Programmes() {
                 <li>Stratégie de séduction et d'empathie sur-mesure</li>
                 <li>Suivi pendant 1 mois avec feedback hebdomadaire</li>
               </ul>
-              <Link href="/contact" className={styles.coachingButton}>
-                Je réserve mon programme légendaire
-              </Link>
             </div>
           </div>
+          <a href="tel:+33787338604" className={styles.contactButton}>
+            Nous contacter
+          </a>
         </section>
 
         <section className={styles.testimonials} aria-labelledby="testimonials-title">
@@ -231,11 +220,19 @@ export default function Programmes() {
             ))}
           </div>
         </section>
-      </main>
 
-      <footer className={styles.footer}>
-        <p>&copy; 2023 CSSéducteur - Le Super-Héros qui Révolutionne la Séduction - Tous droits réservés</p>
-      </footer>
+        <section className={styles.coachingSection}>
+          <h2>Découvrez Nos Coachs Experts</h2>
+          <p className={styles.sectionDesc}>Rencontrez notre équipe de coachs professionnels CSSéducteur qui vous accompagneront dans votre transformation</p>
+          <Link href="/coachs" className={styles.contactButton}>
+            Découvrir nos Coachs
+          </Link>
+        </section>
+
+        <footer className={styles.footer}>
+          <p>&copy; 2025 CSSéducteur - Tous droits réservés</p>
+        </footer>
+      </main>
     </div>
   )
 } 
