@@ -104,7 +104,11 @@ export default function Coachs() {
                 et à maximiser leur potentiel. Son expertise est un atout précieux pour CSSéducteur.
               </p>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               <Link href="#" className={styles.accessButton}>
+=======
+              <Link href="/coachs/coach-william" className={styles.accessButton}>
+>>>>>>> Stashed changes
 =======
               <Link href="/coachs/coach-william" className={styles.accessButton}>
 >>>>>>> Stashed changes
