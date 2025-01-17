@@ -77,15 +77,7 @@ export default function Home() {
         <div className={styles.heroContent}>
           <h1>CSSéducteur : Maîtrisez l'Art de la Séduction avec Style</h1>
           <p>Programmes de Coaching en Séduction, Mentors Dévoués et Blog Inspirant pour Révéler le Séducteur en Vous</p>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-          <Link href="/programmes" className={styles.ctaButton}>
-=======
           <Link href="/services" className={styles.ctaButton}>
->>>>>>> Stashed changes
-=======
-          <Link href="/services" className={styles.ctaButton}>
->>>>>>> Stashed changes
             Commencez Votre Transformation
           </Link>
         </div>

@@ -201,22 +201,9 @@ export default function Programmes() {
               </ul>
             </div>
           </div>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-          <p className={styles.disclaimer}>
-            🎭 Attention : Ceci est un site humoristique créé dans le cadre d'un projet étudiant. 
-            aucun service de coaching n'est réellement proposé. Gardez le sourire et profitez de l'humour ! 😉
-          </p>
-=======
           <a href="tel:+33787338604" className={styles.contactButton}>
             Nous contacter
           </a>
->>>>>>> Stashed changes
-=======
-          <a href="tel:+33787338604" className={styles.contactButton}>
-            Nous contacter
-          </a>
->>>>>>> Stashed changes
         </section>
 
         <section className={styles.testimonials} aria-labelledby="testimonials-title">
@@ -234,11 +221,6 @@ export default function Programmes() {
           </div>
         </section>
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
         <section className={styles.coachingSection}>
           <h2>Découvrez Nos Coachs Experts</h2>
           <p className={styles.sectionDesc}>Rencontrez notre équipe de coachs professionnels CSSéducteur qui vous accompagneront dans votre transformation</p>
@@ -247,10 +229,6 @@ export default function Programmes() {
           </Link>
         </section>
 
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
         <footer className={styles.footer}>
           <p>&copy; 2025 CSSéducteur - Tous droits réservés</p>
         </footer>
