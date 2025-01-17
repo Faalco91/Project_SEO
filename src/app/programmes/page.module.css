@@ -357,34 +357,52 @@
 
 .powerCard {
   background: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
   position: relative;
   overflow: hidden;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(229, 56, 59, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .powerCard:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(229, 56, 59, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.powerCard::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, rgba(229, 56, 59, 0.1), transparent);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+.powerCard:hover .powerIcon {
+  transform: scale(1.1);
 }
 
-.powerCard:hover::before {
-  opacity: 1;
+.powerCard:hover .powerLinkText {
+  color: #E62429;
+}
+
+.powerLinkText {
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.powerLinkText::after {
+  content: '→';
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.powerCard:hover .powerLinkText::after {
+  transform: translateX(5px);
 }
 
 .powerIcon {
@@ -448,6 +466,8 @@
   text-decoration: none;
   margin-top: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  margin: 3rem auto 0;
 }
 
 .powerLink:hover {
@@ -458,7 +478,7 @@
 /* Témoignages */
 .testimonials {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  background: #000000;
 }
 
 .testimonials h2 {
@@ -510,7 +530,7 @@
 /* Section Coaching */
 .coachingSection {
   padding: 6rem 2rem;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  background: #000000;
 }
 
 .coachingSection h2 {
@@ -521,6 +541,15 @@
   background: linear-gradient(45deg, #E5383B, #FF1744);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.sectionDesc {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 .coachingGrid {
@@ -606,9 +635,9 @@
   color: #E5383B;
 }
 
-.coachingButton {
+.contactButton {
   display: block;
-  background: linear-gradient(45deg, #E5383B, #FF1744);
+  background: #E62429;
   color: white;
   text-align: center;
   padding: 1rem 2rem;
@@ -616,9 +645,11 @@
   text-decoration: none;
   font-weight: bold;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  margin: 3rem auto 0;
 }
 
-.coachingButton:hover {
+.contactButton:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(229, 56, 59, 0.3);
 }

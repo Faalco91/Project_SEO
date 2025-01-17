@@ -25,7 +25,7 @@ const raisons = [
     title: 'Résultats Concrets',
     description: 'Avec CSSéducteur, vous obtenez des résultats tangibles, que ce soit en termes de confiance en soi, de maîtrise des techniques de séduction, ou dans vos relations.',
     icon: '/images/icones/resultats.svg',
-    link: '/temoignages' // Lien vers la page des témoignages pour montrer les résultats
+    link: '/blog' // Lien vers la page blog pour voir les résultats
   },
   {
     title: 'Suivi Continu',
@@ -77,7 +77,11 @@ export default function Home() {
         <div className={styles.heroContent}>
           <h1>CSSéducteur : Maîtrisez l'Art de la Séduction avec Style</h1>
           <p>Programmes de Coaching en Séduction, Mentors Dévoués et Blog Inspirant pour Révéler le Séducteur en Vous</p>
+<<<<<<< Updated upstream
           <Link href="/programmes" className={styles.ctaButton}>
+=======
+          <Link href="/services" className={styles.ctaButton}>
+>>>>>>> Stashed changes
             Commencez Votre Transformation
           </Link>
         </div>
@@ -159,7 +163,7 @@ export default function Home() {
           <p>
             Rejoignez les centaines de personnes qui ont transformé leur vie grâce aux techniques uniques de séduction de CSSéducteur. Découvrez comment notre méthode peut vous aider à développer votre charisme et à révéler le séducteur qui sommeille en vous !
           </p>
-          <Link href="/programmes" className={styles.ctaButton}>
+          <Link href="/services" className={styles.ctaButton}>
             Commencer Ma Transformation avec CSSéducteur
           </Link>
         </section>

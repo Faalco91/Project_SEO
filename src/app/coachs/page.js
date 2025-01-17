@@ -103,7 +103,11 @@ export default function Coachs() {
                 Avec une approche centrée sur le développement personnel, Coach William aide ses clients à surmonter leurs peurs 
                 et à maximiser leur potentiel. Son expertise est un atout précieux pour CSSéducteur.
               </p>
+<<<<<<< Updated upstream
               <Link href="#" className={styles.accessButton}>
+=======
+              <Link href="/coachs/coach-william" className={styles.accessButton}>
+>>>>>>> Stashed changes
                 En savoir plus sur William
               </Link>
             </article>

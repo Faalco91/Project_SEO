@@ -5,8 +5,28 @@ import stephane from '../../../../public/images/coachs/stephane_malassagne.webp'
 import Script from 'next/script';
 
 export const metadata = {
+<<<<<<< Updated upstream
   title: "Stéphane Malassagne – Coach en Relations avec CSSéducteur",
   description: "Découvrez Stéphane Malassagne, le coach dynamique qui transforme vos relations. Grâce à CSSéducteur, boostez votre confiance et votre charisme.",
+=======
+  title: "Stéphane Malassagne | Expert CSSéducteur en Communication et Relations",
+  description: "Découvrez Stéphane Malassagne, coach CSSéducteur dynamique spécialisé en communication et relations interpersonnelles. Transformez votre vie sociale avec son énergie contagieuse.",
+  keywords: "CSSéducteur, Stéphane Malassagne, coach communication, relations interpersonnelles, développement personnel, coaching séduction",
+  openGraph: {
+    title: "Stéphane Malassagne | Expert CSSéducteur en Communication",
+    description: "Transformez votre vie sociale avec Stéphane Malassagne, coach CSSéducteur dynamique. Une approche énergique pour des résultats concrets.",
+    type: "profile",
+    locale: "fr_FR",
+    images: [
+      {
+        url: "/images/coachs/stephane_malassagne.webp",
+        width: 300,
+        height: 300,
+        alt: "Stéphane Malassagne, Expert CSSéducteur"
+      }
+    ]
+  }
+>>>>>>> Stashed changes
 };
 
 export default function StephaneMalassagne() {
@@ -14,6 +34,7 @@ export default function StephaneMalassagne() {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Stéphane Malassagne",
+<<<<<<< Updated upstream
     "jobTitle": "Coach en Relations et Développement Personnel",
     "description": "Expert en communication et développement personnel chez CSSéducteur",
     "image": "../../../../public/images/coachs/stephane_malassagne.webp",
@@ -21,6 +42,15 @@ export default function StephaneMalassagne() {
     "sameAs": [
       "https://www.tiktok.com/@stephanemalassagne",
       "https://www.youtube.com/@stephanemalassagne"
+=======
+    "jobTitle": "Expert CSSéducteur en Communication et Relations",
+    "description": "Coach CSSéducteur spécialisé en communication et relations interpersonnelles, connu pour son approche dynamique et son énergie contagieuse",
+    "image": "../../../../public/images/coachs/stephane_malassagne.webp",
+    "url": "https://csseducteur.fr/coachs/stephane-malassagne",
+    "sameAs": [
+      "https://www.tiktok.com/@stephanemalassagne?lang=fr",
+      "https://www.youtube.com/@Stephane-Malassagne"
+>>>>>>> Stashed changes
     ],
     "worksFor": {
       "@type": "Organization",
@@ -33,8 +63,13 @@ export default function StephaneMalassagne() {
     },
     "offers": {
       "@type": "Offer",
+<<<<<<< Updated upstream
       "name": "Coaching en développement personnel et communication",
       "description": "Séances de coaching individuelles et ateliers collectifs pour booster votre confiance",
+=======
+      "name": "Coaching CSSéducteur en Communication",
+      "description": "Programmes de coaching personnalisés pour développer votre charisme et vos compétences relationnelles",
+>>>>>>> Stashed changes
       "price": "150.00",
       "priceCurrency": "EUR",
       "availability": "https://schema.org/InStock"
@@ -110,12 +145,20 @@ export default function StephaneMalassagne() {
               <p>Stéphane Malassagne ne fait jamais dans la demi-mesure. Coach en relations interpersonnelles, en développement personnel, et autoproclamé « dynamo humaine », Stéphane est là pour bousculer votre quotidien (et votre zone de confort) avec CSSéducteur.</p>
               <p>Connu pour son énergie débordante et son penchant pour les discours dignes de TED Talks (même quand ce n'est pas le moment), Stéphane croit que chaque personne peut atteindre des sommets… à condition d'être prêt à l'entendre parler de son propre succès d'abord.</p>
               <div className={styles.socialLinks}>
+<<<<<<< Updated upstream
                 <a href="https://www.youtube.com/@stephanemalassagne" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="YouTube">
+=======
+                <a href="https://www.youtube.com/@Stephane-Malassagne" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="YouTube">
+>>>>>>> Stashed changes
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                   </svg>
                 </a>
+<<<<<<< Updated upstream
                 <a href="https://www.tiktok.com/@stephanemalassagne" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="TikTok">
+=======
+                <a href="https://www.tiktok.com/@stephanemalassagne?lang=fr" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="TikTok">
+>>>>>>> Stashed changes
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
                   </svg>
@@ -165,6 +208,7 @@ export default function StephaneMalassagne() {
 
         {/* Services Section */}
         <section className={styles.section}>
+<<<<<<< Updated upstream
           <h2 className={styles.sectionTitle}>Ce qu'il propose avec CSSéducteur</h2>
           <p className={styles.subtitle}>Stéphane a transformé son énergie en un programme unique (et un peu bruyant).</p>
           <div className={styles.servicesGrid}>
@@ -179,6 +223,22 @@ export default function StephaneMalassagne() {
             <div className={styles.serviceCard}>
               <h3>Programme exclusif CSSéducteur</h3>
               <p>Stéphane jure que son approche peut transformer votre confiance en vous en un atout irrésistible, à condition de supporter quelques anecdotes sur sa vie de « coach star ».</p>
+=======
+          <h2 className={styles.sectionTitle}>Les Services CSSéducteur de Stéphane</h2>
+          <p className={styles.subtitle}>Des programmes uniques pour transformer votre communication</p>
+          <div className={styles.servicesGrid}>
+            <div className={styles.serviceCard}>
+              <h3>Coaching CSSéducteur Individuel</h3>
+              <p>Un accompagnement personnalisé pour développer votre charisme et votre confiance en vous.</p>
+            </div>
+            <div className={styles.serviceCard}>
+              <h3>Ateliers CSSéducteur en Groupe</h3>
+              <p>Développez vos compétences relationnelles dans une ambiance dynamique et stimulante.</p>
+            </div>
+            <div className={styles.serviceCard}>
+              <h3>Programme Élite CSSéducteur</h3>
+              <p>Une transformation complète de votre communication pour des résultats exceptionnels.</p>
+>>>>>>> Stashed changes
             </div>
           </div>
         </section>
@@ -225,10 +285,17 @@ export default function StephaneMalassagne() {
 
         {/* CTA Section */}
         <section className={styles.ctaSection}>
+<<<<<<< Updated upstream
           <h2 className={styles.ctaTitle}>Envie de tester l'énergie débordante de Stéphane Malassagne ?</h2>
           <p className={styles.ctaText}>Réservez une session avec Stéphane et découvrez comment CSSéducteur peut faire passer votre vie de display: block à display: inline-flex.</p>
           <a href="tel:+33787338604" className={styles.ctaButton}>
             Réservez votre session maintenant avec Stéphane et CSSéducteur
+=======
+          <h2 className={styles.ctaTitle}>Prêt à Booster Votre Communication avec CSSéducteur ?</h2>
+          <p className={styles.ctaText}>Rejoignez Stéphane Malassagne et découvrez la méthode CSSéducteur pour une transformation concrète de vos relations.</p>
+          <a href="tel:+33787338604" className={styles.ctaButton} aria-label="Réserver une séance avec Stéphane Malassagne de CSSéducteur">
+            Réservez votre session CSSéducteur
+>>>>>>> Stashed changes
           </a>
         </section>
 
