@@ -1,0 +1,223 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, rgba(230, 36, 41, 0.1), rgba(0, 0, 0, 0.8));
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  color: #E62429;
+  margin-bottom: 1rem;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Articles Section */
+.articles {
+  margin-bottom: 4rem;
+}
+
+.articles h2 {
+  font-size: 2rem;
+  color: #E62429;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.articleGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.articleCard {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.articleCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(230, 36, 41, 0.1);
+}
+
+.articleImage {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.articleContent {
+  padding: 1.5rem;
+}
+
+.articleMeta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.category {
+  color: #E62429;
+  font-weight: 600;
+}
+
+.readTime {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.articleContent h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.articleContent p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.articleFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.date {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.readMore {
+  color: #E62429;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.readMore:hover {
+  color: #ff3b3b;
+}
+
+/* Newsletter Section */
+.newsletter {
+  background: linear-gradient(135deg, rgba(230, 36, 41, 0.1), rgba(0, 0, 0, 0.8));
+  padding: 3rem;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.newsletter h2 {
+  color: #E62429;
+  margin-bottom: 1rem;
+}
+
+.newsletter p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+}
+
+.newsletterForm {
+  display: flex;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.emailInput {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+}
+
+.emailInput::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.subscribeButton {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 30px;
+  background: #E62429;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.subscribeButton:hover {
+  background: #ff3b3b;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+  background: #1a1a1a;
+  padding: 2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .newsletterForm {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .subscribeButton {
+    width: 100%;
+  }
+
+  .articleGrid {
+    grid-template-columns: 1fr;
+  }
+} 
