@@ -18,7 +18,7 @@ export default function SocialBar() {
       </a>
       
       <a 
-        href="https://instagram.com/icimettrelenomducompte" 
+        href="https://www.instagram.com/csseducteurclub?igsh=MTF4aTEzYjBteG1wcw==" 
         target="_blank" 
         rel="noopener noreferrer"
         className={styles.socialLink}
@@ -28,7 +28,7 @@ export default function SocialBar() {
       </a>
       
       <a 
-        href="https://twitter.com/icimettrelenomducompte" 
+        href="https://x.com/csseducteurclub?s=11" 
         target="_blank" 
         rel="noopener noreferrer"
         className={styles.socialLink}
