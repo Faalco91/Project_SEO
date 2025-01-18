@@ -1,0 +1,111 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.article {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.heroImage {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  color: #E62429;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.metadata {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 3rem;
+  font-size: 0.9rem;
+}
+
+.content section {
+  margin-bottom: 3rem;
+}
+
+.content h2 {
+  font-size: 1.8rem;
+  color: #E62429;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer {
+  background: #1a1a1a;
+  padding: 2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+
+  .content {
+    padding: 1.5rem;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .heroImage {
+    height: 300px;
+  }
+
+  .metadata {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+} 
