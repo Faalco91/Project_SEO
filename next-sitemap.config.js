@@ -5,5 +5,6 @@ module.exports = {
     changefreq: 'daily', // Fréquence des mises à jour (daily, weekly, monthly, etc.)
     priority: 0.7, // Priorité des pages
     sitemapSize: 5000, // Nombre maximum de liens par sitemap
+    outDir: './out',  // Vérifiez où le fichier sitemap est généré
   }
   
