@@ -38,7 +38,7 @@ export default function SocialBar() {
       </a>
 
       <a 
-        href="https://linkedin.com/company/icimettrelenomducompte" 
+        href="https://www.linkedin.com/in/css%C3%A9ducteur-css%C3%A9ducteur-club-8683a2347/" 
         target="_blank" 
         rel="noopener noreferrer"
         className={styles.socialLink}
