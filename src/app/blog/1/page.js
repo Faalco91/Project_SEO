@@ -8,6 +8,8 @@ export const metadata = {
     keywords: 'CSSéducteur, communication non-verbale, langage corporel, séduction, coaching, développement personnel'
 };
 
+import communication from '../../../../public/images/blog/communication.webp';
+
 export default function Article() {
     return (
         <div className={styles.container}>
@@ -17,7 +19,7 @@ export default function Article() {
                 <article className={styles.article}>
                     <div className={styles.heroImage}>
                         <Image
-                            src="/images/blog/communication-non-verbale.jpg"
+                            src={communication}
                             alt="Communication non-verbale"
                             width={1200}
                             height={600}

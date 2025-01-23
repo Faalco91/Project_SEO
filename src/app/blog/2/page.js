@@ -8,6 +8,8 @@ export const metadata = {
     keywords: 'CSSéducteur, confiance en soi, développement personnel, charisme, coaching, séduction'
 };
 
+import confiance from '../../../../public/images/blog/confiance.webp';
+
 export default function Article() {
     return (
         <div className={styles.container}>
@@ -17,7 +19,7 @@ export default function Article() {
                 <article className={styles.article}>
                     <div className={styles.heroImage}>
                         <Image
-                            src="/images/blog/confiance-en-soi.jpg"
+                            src={confiance}
                             alt="Développer sa confiance en soi"
                             width={1200}
                             height={600}

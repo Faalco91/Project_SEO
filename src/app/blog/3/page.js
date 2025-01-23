@@ -8,6 +8,8 @@ export const metadata = {
     keywords: 'CSSéducteur, art conversation, communication, séduction, connexion, dialogue'
 };
 
+import art from '../../../../public/images/blog/conversation.webp';
+
 export default function Article() {
     return (
         <div className={styles.container}>
@@ -17,7 +19,7 @@ export default function Article() {
                 <article className={styles.article}>
                     <div className={styles.heroImage}>
                         <Image
-                            src="/images/blog/art-conversation.jpg"
+                            src={art}
                             alt="L'art de la conversation"
                             width={1200}
                             height={600}

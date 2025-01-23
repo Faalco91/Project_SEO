@@ -7,3 +7,5 @@ Host: https://csseducteur.club
 
 # Sitemaps
 Sitemap: https://csseducteur.club/sitemap.xml
+Sitemap: https://csseducteur.club/sitemap-0.xml
+

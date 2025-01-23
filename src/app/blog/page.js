@@ -25,7 +25,7 @@ const articles = [
     id: 1,
     title: 'Les Secrets de la Communication Non-Verbale par CSSéducteur',
     excerpt: 'Découvrez les techniques exclusives de CSSéducteur pour maîtriser le langage corporel et créer une connexion instantanée.',
-    image: '/images/blog/communication-non-verbale.jpg',
+    image: '/images/blog/communication.webp',
     category: 'Communication',
     date: '15 Janvier 2025',
     readTime: '5 min',
@@ -35,7 +35,7 @@ const articles = [
     id: 2,
     title: 'Développer sa Confiance en Soi avec CSSéducteur',
     excerpt: 'Les techniques CSSéducteur pour renforcer votre estime personnelle et votre charisme naturel.',
-    image: '/images/blog/confiance-en-soi.jpg',
+    image: '/images/blog/confiance.webp',
     category: 'Développement Personnel',
     date: '12 Janvier 2025',
     readTime: '7 min',
@@ -45,12 +45,23 @@ const articles = [
     id: 3,
     title: 'L\'Art de la Conversation selon CSSéducteur',
     excerpt: 'La méthode CSSéducteur pour engager et maintenir des conversations passionnantes qui créent des connexions profondes.',
-    image: '/images/blog/art-conversation.jpg',
+    image: '/images/blog/conversation.webp',
     category: 'Communication',
     date: '10 Janvier 2025',
     readTime: '6 min',
     author: 'CSSéducteur'
+  },
+  {
+    id: 4,
+    title: 'Maîtriser l’Approche Initiale avec CSSéducteur',
+    excerpt: 'Apprenez comment aborder une personne en toute confiance grâce aux techniques éprouvées de CSSéducteur.',
+    image: '/images/blog/approche.webp',
+    category: 'Séduction',
+    date: '23 Janvier 2025',
+    readTime: '5 min',
+    author: 'CSSéducteur'
   }
+  
 ];
 
 export default function Blog() {
