@@ -24,6 +24,7 @@ export default function Article() {
                             width={1200}
                             height={600}
                             className={styles.image}
+                            loading='lazy'
                         />
                     </div>
                     <div className={styles.content}>

@@ -127,6 +127,7 @@ export default function Blog() {
                     alt={article.title}
                     fill
                     style={{ objectFit: 'cover' }}
+                    loading='lazy'
                   />
                 </div>
                 <div className={styles.articleContent}>
