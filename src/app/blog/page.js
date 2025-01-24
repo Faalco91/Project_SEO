@@ -71,20 +71,16 @@ export default function Blog() {
     "@type": "Blog",
     "name": "Blog CSSéducteur",
     "description": "Blog officiel de CSSéducteur sur la séduction authentique et le développement personnel",
-    "url": "https://csseducteur.fr/blog",
+    "url": "https://csseducteur.club/blog",
     "publisher": {
       "@type": "Organization",
-      "name": "CSSéducteur",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://csseducteur.fr/images/logo.png"
-      }
+      "name": "CSSéducteur Club"
     },
     "blogPost": articles.map(article => ({
       "@type": "BlogPosting",
       "headline": article.title,
       "description": article.excerpt,
-      "image": `https://csseducteur.fr${article.image}`,
+      "image": `https://csseducteur.club${article.image}`,
       "datePublished": article.date,
       "author": {
         "@type": "Person",
@@ -92,7 +88,7 @@ export default function Blog() {
       },
       "publisher": {
         "@type": "Organization",
-        "name": "CSSéducteur"
+        "name": "CSSéducteur Club"
       }
     }))
   };
