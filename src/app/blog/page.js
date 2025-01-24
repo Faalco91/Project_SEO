@@ -14,7 +14,7 @@ export const metadata = {
     description: 'Explorez le blog officiel de CSSéducteur : articles experts sur la séduction authentique, le développement personnel et l\'art des relations.',
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://csseducteur.fr/blog',
+    url: 'https://csseducteur.club/blog',
     siteName: 'CSSéducteur',
   }
 };
