@@ -8,7 +8,7 @@ export default function SocialBar() {
   return (
     <div className={styles.socialBar}>
       <a 
-        href="https://facebook.com/icimettrelenomducompte" 
+        href="https://www.facebook.com/profile.php?id=61571996444302" 
         target="_blank" 
         rel="noopener noreferrer"
         className={styles.socialLink}
